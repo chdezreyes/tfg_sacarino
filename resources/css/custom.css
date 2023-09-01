@@ -1,0 +1,340 @@
+.full-height {
+  height: 100vh;
+}
+
+.panel-height{
+min-height: calc(100vh - 140px);
+max-height: calc(100vh - 140px);
+}
+
+.overflow-auto {
+overflow: auto;
+}
+
+/* SCROL BAR */
+
+/* width */
+::-webkit-scrollbar {
+width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #ffe3d6; 
+}
+
+/* SIDE BAR  */
+
+.li-height{
+height: 60px;
+}
+
+.back-sidebar{
+background-color: #252422;
+color:floralwhite;
+}
+
+.front-sidebar{
+background-color: #8b8c89;
+color:white;
+text-decoration: none;
+}
+
+.sidebar-selected{
+background-color: #F4F6F9 !important;
+color: #252422 !important;
+border-radius: 10px 0 0 10px !important;
+}
+
+/* NAV BAR */
+.navbar-selected{
+background-color: #F4F6F9 !important;
+color: #252422 !important;
+border-radius: 10px 10px 0 0 !important;
+}
+
+
+/*  FORMS  */
+
+.borderbottom{
+  min-height: 34px;
+border-bottom: 1px solid #e9e7e7;
+border-left: 0px;
+border-right: 0px;
+border-top: 0px;
+}
+
+.form-label{
+background-color: #f4f6f9;
+}
+
+/* change color on hover */
+.on-hover:hover{
+background-color: #8B8C89 !important;
+color: white !important;
+} 
+
+/* Change color on selected*/
+
+.on-selected{
+background-color: #ff6b24 !important;
+color: white !important;
+}
+
+.pointer-cursor{
+cursor: pointer;
+}
+
+.search-box-icon {
+height: 38px;
+}
+
+.search-box-input {
+height: 38px;
+border-top-right-radius: 0;
+border-bottom-right-radius: 0;
+
+}
+
+.border-porimary{
+border-color: #ff6b24;
+}
+
+.custom-select option:hover {
+background-color: #ff6b24; /* Replace with your desired background color */
+}
+
+select option:hover {
+background-color: #ff6b24 !important;
+}
+
+.tr-active{
+
+  background-color: #ff6b24 !important;
+  color: white !important;
+
+}
+
+
+.fondo-edit{
+
+  color:white; 
+  background-color:grey; 
+  opacity:0.6
+  }
+
+
+/*TO MAKE PANEL UNREACHABLE WHEN EDITING*/ 
+
+.unclickableDiv {
+
+  position: relative; /* Required for the ::before pseudo-element */
+  pointer-events: none;
+}
+
+.unclickableDiv::after{
+  content: ""; /* Required for the ::before pseudo-element */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7); /* Change the last value (0.5) to adjust the transparency */
+  pointer-events: none;
+}
+
+/* .row dd, .row dl{
+  padding: 3px;
+  margin: 0 !important;
+} */
+
+.key-cell {
+  text-transform: capitalize; /* Capitalize the text */
+  background-color: #EFEFF0; /* Gray background color */
+  border: 1px solid white;
+  padding: 5px 3px 5px 8px;
+}
+
+.value-cell {
+  border-bottom: 1px solid rgb(199, 194, 194); /* White border*/
+  padding-left: 10px !important;
+  min-height: 34px;
+}
+/* DNI PHOTOS */
+.sizeDNI{
+  max-width: 200px;
+}
+/* Timeline */
+.sizeStatus{/* square of status observaciones */
+  font-size: 15px;
+}
+/* clock timeline */
+.timeline > div > .material-symbols-outlined,
+.timeline > div > .material-icons,
+.timeline > div > .svg-inline--material-symbols-outlined{
+  background-color: #adb5bd;
+  border-radius: 50%;
+  font-size: 22px;
+  height: 30px;
+  left: 18px;
+  line-height: 30px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 30px;
+}
+/* form terceros */
+.standard-form .form-field {
+  position: relative;
+  margin: 8px 0;
+}
+.standard-form .form-input,
+.standard-form select.form-input {
+  display: block;
+  width: 100%;
+  height: calc(1.5rem + 0.75rem + 2px);
+  border-width: 0 0 2px 0;
+  border-color: rgba(0,0,0,.12);
+  background-color:#f8f9fa;
+  background-clip: padding-box;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  padding: 0.3rem 0.75rem 0.3rem .75rem;
+  transition: border-color 0.2s ease-in-out;
+}
+.standard-form .label {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  font-size: inherit;
+  line-height: 1.5;
+  font-weight: 400;
+  cursor: text;
+}
+.standard-form .form-input:focus {
+  outline: none; 
+  border-color: #ff6b24;
+}
+.standard-form .form-input:focus + .label {
+  outline: none; 
+  color: #ff6b24;
+}
+
+.standard-dt {
+  position: relative;
+  text-transform: capitalize;
+  left: 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: bold;
+  z-index: 2; 
+}
+
+.standard-dd {
+  position: relative; 
+  width: 100%;
+  height: calc(1.5rem + 0.75rem + 2px);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+  background-color: #f8f9fa;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: -0.75rem; /* Cambiado 'bottom' a 'margin-top' para superponer */
+  padding: 12px;
+  z-index: 1; /* Cambiado a un valor menor que <dt> */
+}
+
+
+/* EN los nav-link-vert se usa en los mayores de la aplicacion de cierre*/
+
+.nav-tabs.flex-column{
+  border-right: 0px transparent !important;
+  font-size: smaller !important;
+}
+
+/* CONTROLAR EL ESPACIO ENTRE LOS ELEEMENTOS DE LA PAGINACIÓN DE LA DATATABLE*/
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  /* margin-right: 2px !important; 
+  margin-left :0px !important; */
+  padding: 0%;
+}
+
+/****** CLASES PARA CROPPER  ******/
+.group{
+  position: relative;
+  max-width: 200px;  
+  padding: 0;
+  outline: 1px solid var(--secundary-color);
+  /* border-radius: 3%; */
+  overflow: hidden;
+}
+.group .crop-image{
+  width: 100%;
+}
+.group .ocultaInput{
+  display: none;
+}
+.group .label-file{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.74);
+  padding: 10px 10px;
+  font-size: 14px;
+  bottom: -50%;
+  left: 0;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+  border: #ff6b24 solid 1px;
+  border-radius: 10px;
+  color: var(--primary-color);
+}
+.group:hover .label-file{
+  bottom: 50px;
+}
+
+.content-imagen-cropper{
+  /* width: 80%; */
+  max-height: 200px;
+  padding: 5px;
+  outline: 1px solid var(--thir-color);
+}
+
+.content-imagen-cropper .img-cropper{
+  width: 100%;
+}
+.content-imagen-sample{
+  max-height: 225px;
+  max-width: 243px; 
+  outline: 1px solid var(--thir-color);
+  overflow: hidden;
+}
+
+.content-imagen-sample .img-sample{
+  height: 100%;
+  width: 100%;
+}
+
+.img-cropper{
+  display: block;
+  max-width: 100%;
+}
+
+
+/**** fin clases para Cropper ****/
+

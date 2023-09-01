@@ -1,0 +1,8 @@
+{
+    "name": "proyecto/sacarino",
+    "description": "Trabajo de final de carrera de ",
+    "license": "proprietary",
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.28"
+    }
+}

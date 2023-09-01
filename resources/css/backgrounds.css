@@ -1,0 +1,44 @@
+.bg-l-orange{
+    background-color: #FFFAF8;
+}
+
+.bg-l-red{
+    background-color: #fff3f3;
+}
+
+.bg-l-grey{
+    background-color: #f9f9f9;
+}
+
+.bg-grey{
+    background-color: #c3c0c0;
+    color: #fff;
+}
+
+.round-top-white {
+    border-top: 3px solid #ff6b24; /* Change #000 to your desired color */
+    border-right: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    border-left: 1px solid lightgrey;
+    border-top-left-radius: 5px; /* Adjust value for desired curvature */
+    border-top-right-radius: 5px; /* Adjust value for desired curvature */
+    min-height: 40px;;
+}
+
+
+/*Estilo para cabecera de mayores*/
+
+.bg-m-header{
+    border-top: 3px solid #8f8f8f; /* Change #000 to your desired color */
+    border-right: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    border-left: 1px solid lightgrey;
+    border-top-left-radius: 5px; /* Adjust value for desired curvature */
+    border-top-right-radius: 5px; /* Adjust value for desired curvature */
+    min-height: 40px;;
+}
+
+
+
+
+  
